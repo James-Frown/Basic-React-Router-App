@@ -11,6 +11,10 @@
             + npm install
         - Open dev server
             + npm run dev
+        - Remove Template Data
+            + delete all the template data
+            
+
 
     
 
