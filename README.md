@@ -28,6 +28,23 @@
             - git commit -m "Update & Changes Made"
             - git push
 
+        ## Connecting react router
+            - Add import to main.jsx
+                + import { BrowserRouter } from 'react-router-dom'
+            - Wrap App component in Browser Router
+                + <BrowserRouter> <App /> </BrowserRouter>
+
+        ## Adding Routing
+            - Add import to App.jsx
+                + import { Routes, Route } from 'react-router-dom'
+            - Add import to components to be routed
+                + import {homePage} from './components/homePage'
+            - Wrap Route in Routes
+                + <Routes> <Route></Route> </Routes>
+            - Add Props to <Route  ></Route>
+                + path='/'
+                + element={<home />}
+
 
 
 
