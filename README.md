@@ -1,49 +1,77 @@
 # Basic-React-Router-App
- My First React Router app
+ My First React Router app that has multiple screens
 
-    My Steps:
+## Source Controll
+    - git add .
+    - git commit -m "Update & Changes Made"
+    - git push
 
-        ##  Create a Vite/React App
-            - npm create vite@latest
-            - Project Name : vite-porject
-            - Framework : React
-            - Variant : Javascript
+##  Create a Vite/React App
+    - npm create vite@latest
+    - Project Name : vite-porject
+    - Framework : React
+    - Variant : Javascript
 
-        ## Build a Vite/React app
-            - cd vite-project
-            - npm install
+## Build a Vite/React app
+    - cd vite-project
+    - npm install
             
-        ## Start a local Server
-            - npm run dev
+## Start a local Server
+    - npm run dev
 
-        ## Remove Template Data
-            - delete all the template data
+## Remove Template Data
+    - delete all the template data
 
-        ## Install React Router
-            - cd vite-project
-            - npm install react-router-dom
+## Install React Router
+    - cd vite-project
+    - npm install react-router-dom
 
-        ## Source Controll
-            - git add .
-            - git commit -m "Update & Changes Made"
-            - git push
+## Creating App component
+    - Make sure all components are like this to start
+        const App = () => {
+            return (
+                <>
+                </>
+            );
+        };
+        export default App;
+        
+## Adding Route's elements in App.jsx
+    - Add import's to App.jsx
+        + import { BrowserRouter, Route, Routes } from "react-router-dom";
+        + import Navbar from "./components/NavBar";
+        + import Landing from "./pages/Landing/Landing";
+        + import About from "./pages/About/About";
+        + import Skills from "./pages/Skills/Skills";
+        + import Projects from "./pages/Projects/Projects";
+        + import Contact from "./pages/Contact/Contact";
 
-        ## Connecting react router
-            - Add import to main.jsx
-                + import { BrowserRouter } from 'react-router-dom'
-            - Wrap App component in Browser Router
-                + <BrowserRouter> <App /> </BrowserRouter>
+## Implimenting Browser Router in App.jsx
+    - Wrap Navigation & Routes, then Wrap Route in Routes
+        + <BrowserRouter>
+            + <Navbar />
+            + <Routes>
+                + <Route />
+                + <Route />
+                + <Route />
+                + <Route />
+                + <Route />
+            + </Routes>
+        + </BrowserRouter>
 
-        ## Adding Routing
-            - Add import to App.jsx
-                + import { Routes, Route } from 'react-router-dom'
-            - Add import to components to be routed
-                + import {homePage} from './components/homePage'
-            - Wrap Route in Routes
-                + <Routes> <Route></Route> </Routes>
-            - Add Props to <Route  ></Route>
-                + path='/'
-                + element={<home />}
+## Adding Routes props
+    - Each Route has:
+        + path='/page'
+        + element={<component />}
+
+    - The landing Route has:
+        + exact="true"
+        + path='/'
+        + element={<component />}
+
+## Added a cool logo to go back to landing screen
+    - Just did this to make the template file a little more detailed
+
 
 
 
