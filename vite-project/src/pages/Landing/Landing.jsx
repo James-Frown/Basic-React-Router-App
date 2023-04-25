@@ -1,4 +1,4 @@
-const Skills = () => {
+const Landing = () => {
     return (
       <div
         style={{
@@ -7,9 +7,10 @@ const Skills = () => {
           alignItems: "center",
         }}
       >
-        <h1>Skills</h1>
+        <h1>Landing</h1>
       </div>
     );
   };
   
-  export default Skills;
+  export default Landing;
+  
