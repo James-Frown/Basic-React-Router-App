@@ -54,6 +54,11 @@ const Navbar = () => {
             Contact
           </Link>
         </li>
+        <li style={{ marginLeft: "20px" }}>
+          <button className="Dark">
+            Contact
+          </button>
+        </li>
       </ul>
     </nav>
   );

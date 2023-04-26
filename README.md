@@ -1,5 +1,5 @@
 # Basic-React-Router-App
- My First React Router app that has multiple screens
+My First React Router app that has multiple screens
 
 ## Source Controll
     - git add .
@@ -72,6 +72,15 @@
 ## Added a cool logo to go back to landing screen
     - Just did this to make the template file a little more detailed
 
+## Learning Animations
+starting to learn the animations for the react/vite app
+
+## AOS | Animate On Scroll
+    - 
+    - 
+    - 
+    - 
+    
 
 
 

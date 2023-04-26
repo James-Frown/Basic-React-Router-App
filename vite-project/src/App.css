@@ -1,7 +1,43 @@
 body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+.Light {
+  background-color: whitesmoke;
+  color: rgb(9, 9, 9);
+}
+
+.Dark {
+  background-color: rgb(9, 9, 9);
+  color: whitesmoke;
+}
+
+.Ltext {
+  font-size: larger;
+}
+
+.MLtext {
+  font-size: large;
+}
+
+.Mtext {
+  font-size: medium;
+}
+
+.Stext {
+  font-size: small;
+}
+
+.XStext {
+  font-size: smaller;
+}
+
+.Heading {
+  font-size: 30px;
+}
+
+.Paragraph {
+  font-size: 16px;
+}
