@@ -7,7 +7,7 @@ const Landing = () => {
     <div className="wrapper center">
       <div className="hero">
         <motion.div
-          initial={{ x: "-800px" }}
+          initial={{ x: "-100rem" }}
           animate={{ x: 0 }}
           transition={{ duration: 1 }}
           className="left"
@@ -20,7 +20,7 @@ const Landing = () => {
           </div>
         </motion.div>
         <motion.div
-          initial={{ x: "800px" }}
+          initial={{ x: "100rem" }}
           animate={{ x: 0 }}
           transition={{ duration: 1 }}
           className="right"

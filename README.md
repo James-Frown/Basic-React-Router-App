@@ -76,11 +76,27 @@ My First React Router app that has multiple screens
 starting to learn the animations for the react/vite app
 
 ## AOS | Animate On Scroll
-    - 
-    - 
-    - 
-    - 
+    - on the website there are examples to use for your own animations
+    - npm install AOS
+    - go to app.jsx add aos imports and init it
+    - remember to have imports in app.jsx
+
+## Framer Motion 
+Installation
+    - npm install framer-motion
+Importing
+    - import { motion } from "framer-motion"
+When using the wrapper divs are motion component
+    - <motion.div></motion.div>
+    - divs go from blue to green
+    - they all have props & the props are before the classname
+        + give it an initial value (    initial={{ x: "-100rem" }}   )
+        + give it an animation of ( animate={{ x: "0" }})
+        + give it a transition of ( transition={{ duration: 1 }} )
     
+
+
+
 
 
 
