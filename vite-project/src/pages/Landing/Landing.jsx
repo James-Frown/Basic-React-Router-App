@@ -1,23 +1,38 @@
+import { motion } from "framer-motion";
+
 import "./Landing.css";
 
 const Landing = () => {
   return (
     <div className="wrapper center">
-
       <div className="hero">
-        <div className="left">
+        <motion.div
+          initial={{ x: "-800px" }}
+          animate={{ x: 0 }}
+          transition={{ duration: 1 }}
+          className="left"
+        >
           <div className="heading">
-            <h1>Heading</h1>
+            <h1>James Brown</h1>
           </div>
           <div className="text">
-            <p>This is the body copy</p>
+            <p>Developer && Designer</p>
           </div>
-        </div>
-        <div className="right">
+        </motion.div>
+        <motion.div
+          initial={{ x: "800px" }}
+          animate={{ x: 0 }}
+          transition={{ duration: 1 }}
+          className="right"
+        >
           <div className="center wrapper">
-            <img className="image" src="" alt="Image"></img>
+            <img
+              className="image"
+              src="https://i.ibb.co/dm3KxF1/dummy-img.png"
+              alt="hero image"
+            ></img>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
