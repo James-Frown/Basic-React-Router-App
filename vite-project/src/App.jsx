@@ -3,7 +3,6 @@ import Landing from "./pages/Landing/Landing";
 import About from "./pages/About/About";
 import Skills from "./pages/Skills/Skills";
 import Projects from "./pages/Projects/Projects";
-import Contact from "./pages/Contact/Contact";
 
 const App = () => {
   return (
@@ -13,7 +12,6 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );

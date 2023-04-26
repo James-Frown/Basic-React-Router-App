@@ -26,7 +26,7 @@ const Navbar = () => {
         }}
       >
         <motion.li
-          initial={{ x: "-800px" }}
+          initial={{ x: "-100rem" }}
           animate={{ x: 0 }}
           transition={{ duration: 1 }}
           style={{ marginLeft: "20px" }}
@@ -36,7 +36,7 @@ const Navbar = () => {
           </Link>
         </motion.li>
         <motion.li
-          initial={{ x: "500px" }}
+          initial={{ x: "50rem" }}
           animate={{ x: 0 }}
           transition={{ duration: 0.6 }}
           style={{ marginLeft: "20px" }}
@@ -50,7 +50,7 @@ const Navbar = () => {
           </Link>
         </motion.li>
         <motion.li
-          initial={{ x: "500px" }}
+          initial={{ x: "50rem" }}
           animate={{ x: 0 }}
           transition={{ duration: 0.7 }}
           style={{ marginLeft: "20px" }}
@@ -60,7 +60,7 @@ const Navbar = () => {
           </Link>
         </motion.li>
         <motion.li
-          initial={{ x: "500px" }}
+          initial={{ x: "50prem" }}
           animate={{ x: 0 }}
           transition={{ duration: 0.8 }}
           style={{ marginLeft: "20px" }}
@@ -73,20 +73,7 @@ const Navbar = () => {
           </Link>
         </motion.li>
         <motion.li
-          initial={{ x: "500px" }}
-          animate={{ x: 0 }}
-          transition={{ duration: 0.9 }}
-          style={{ marginLeft: "20px" }}
-        >
-          <Link
-            to="/contact"
-            style={{ textDecoration: "none", color: "black" }}
-          >
-            Contact
-          </Link>
-        </motion.li>
-        <motion.li
-          initial={{ x: "500px" }}
+          initial={{ x: "50rem" }}
           animate={{ x: 0 }}
           transition={{ duration: 1 }}
           style={{ marginLeft: "20px" }}
