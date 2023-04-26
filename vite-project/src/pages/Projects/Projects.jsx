@@ -1,5 +1,9 @@
+import Navbar from "../../components/NavBar";
+
 const Projects = () => {
-    return (
+  return (
+    <>
+      <Navbar />
       <div
         style={{
           display: "flex",
@@ -9,7 +13,8 @@ const Projects = () => {
       >
         <h1>Projects</h1>
       </div>
-    );
-  };
-  
-  export default Projects;
+    </>
+  );
+};
+
+export default Projects;

@@ -91,7 +91,14 @@ const Navbar = () => {
           transition={{ duration: 1 }}
           style={{ marginLeft: "20px" }}
         >
-          <button className="Dark">Contact</button>
+          <a
+            href="mailto:2022privateequity@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+            style={{ textDecoration: "none", color: "black" }}
+          >
+            <button className="Dark">Contact</button>
+          </a>
         </motion.li>
       </ul>
     </nav>

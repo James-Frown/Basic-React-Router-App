@@ -1,5 +1,9 @@
+import Navbar from "../../components/NavBar";
+
 const Skills = () => {
-    return (
+  return (
+    <>
+      <Navbar />
       <div
         style={{
           display: "flex",
@@ -9,7 +13,8 @@ const Skills = () => {
       >
         <h1>Skills</h1>
       </div>
-    );
-  };
-  
-  export default Skills;
+    </>
+  );
+};
+
+export default Skills;

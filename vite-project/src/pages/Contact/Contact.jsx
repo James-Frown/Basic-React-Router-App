@@ -1,5 +1,9 @@
+import Navbar from "../../components/NavBar";
+
 const Contact = () => {
-    return (
+  return (
+    <>
+      <Navbar />
       <div
         style={{
           display: "flex",
@@ -9,8 +13,8 @@ const Contact = () => {
       >
         <h1>Contact</h1>
       </div>
-    );
-  };
-  
-  export default Contact;
-  
+    </>
+  );
+};
+
+export default Contact;

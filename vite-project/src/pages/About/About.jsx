@@ -1,5 +1,9 @@
+import Navbar from "../../components/NavBar";
+
 const About = () => {
-    return (
+  return (
+    <>
+      <Navbar />
       <div
         style={{
           display: "flex",
@@ -9,8 +13,8 @@ const About = () => {
       >
         <h1>About</h1>
       </div>
-    );
-  };
-  
-  export default About;
-  
+    </>
+  );
+};
+
+export default About;
