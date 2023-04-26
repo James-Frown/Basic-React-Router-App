@@ -81,11 +81,13 @@ starting to learn the animations for the react/vite app
     - go to app.jsx add aos imports and init it
     - remember to have imports in app.jsx
 
-## Framer Motion 
-Installation
+## Framer Motion | Installation
     - npm install framer-motion
-Importing
+
+## Framer Motion | Importing
     - import { motion } from "framer-motion"
+
+## Framer Motion | Use
 When using the wrapper divs are motion component
     - <motion.div></motion.div>
     - divs go from blue to green
@@ -93,6 +95,14 @@ When using the wrapper divs are motion component
         + give it an initial value (    initial={{ x: "-100rem" }}   )
         + give it an animation of ( animate={{ x: "0" }})
         + give it a transition of ( transition={{ duration: 1 }} )
+    - initial and animate are like key frames
+    - the way to add life to them is with the duration prop
+
+## Framer Motion | Extra
+    - transition has many props
+        + add them like how you do the duration
+
+
     
 
 
