@@ -1,8 +1,18 @@
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
+import { useEffect } from "react";
 
 import "./Landing.css";
 
 const Landing = () => {
+  const controls = useAnimation();
+
+  useEffect(() => {
+    controls.start({
+      y: [0, 20, 0],
+      transition: { duration: 5, repeat: Infinity },
+    });
+  });
+
   return (
     <div className="wrapper center">
       <div className="hero">
@@ -26,11 +36,12 @@ const Landing = () => {
           className="right"
         >
           <div className="center wrapper">
-            <img
+            <motion.img
+              animate={controls}
               className="image"
               src="https://i.ibb.co/dm3KxF1/dummy-img.png"
               alt="hero image"
-            ></img>
+            />
           </div>
         </motion.div>
       </div>
@@ -39,3 +50,8 @@ const Landing = () => {
 };
 
 export default Landing;
+
+// react hooks
+// useState()
+// useEffect()
+// useReducer()

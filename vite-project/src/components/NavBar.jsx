@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 
+import { motion } from "framer-motion";
+
 const Navbar = () => {
   return (
     <nav
@@ -23,42 +25,74 @@ const Navbar = () => {
           margin: 0,
         }}
       >
-        <li style={{ marginLeft: "20px" }}>
+        <motion.li
+          initial={{ x: "-800px" }}
+          animate={{ x: 0 }}
+          transition={{ duration: 1 }}
+          style={{ marginLeft: "20px" }}
+        >
           <Link exact to="/" style={{ textDecoration: "none", color: "black" }}>
             <img src="./myLogo.svg"></img>
           </Link>
-        </li>
-        <li style={{ marginLeft: "20px" }}>
-          <Link exact to="/about" style={{ textDecoration: "none", color: "black" }}>
+        </motion.li>
+        <motion.li
+          initial={{ x: "500px" }}
+          animate={{ x: 0 }}
+          transition={{ duration: 0.6 }}
+          style={{ marginLeft: "20px" }}
+        >
+          <Link
+            exact
+            to="/about"
+            style={{ textDecoration: "none", color: "black" }}
+          >
             About
           </Link>
-        </li>
-        <li style={{ marginLeft: "20px" }}>
+        </motion.li>
+        <motion.li
+          initial={{ x: "500px" }}
+          animate={{ x: 0 }}
+          transition={{ duration: 0.7 }}
+          style={{ marginLeft: "20px" }}
+        >
           <Link to="/skills" style={{ textDecoration: "none", color: "black" }}>
             Skills
           </Link>
-        </li>
-        <li style={{ marginLeft: "20px" }}>
+        </motion.li>
+        <motion.li
+          initial={{ x: "500px" }}
+          animate={{ x: 0 }}
+          transition={{ duration: 0.8 }}
+          style={{ marginLeft: "20px" }}
+        >
           <Link
             to="/projects"
             style={{ textDecoration: "none", color: "black" }}
           >
             Projects
           </Link>
-        </li>
-        <li style={{ marginLeft: "20px" }}>
+        </motion.li>
+        <motion.li
+          initial={{ x: "500px" }}
+          animate={{ x: 0 }}
+          transition={{ duration: 0.9 }}
+          style={{ marginLeft: "20px" }}
+        >
           <Link
             to="/contact"
             style={{ textDecoration: "none", color: "black" }}
           >
             Contact
           </Link>
-        </li>
-        <li style={{ marginLeft: "20px" }}>
-          <button className="Dark">
-            Contact
-          </button>
-        </li>
+        </motion.li>
+        <motion.li
+          initial={{ x: "500px" }}
+          animate={{ x: 0 }}
+          transition={{ duration: 1 }}
+          style={{ marginLeft: "20px" }}
+        >
+          <button className="Dark">Contact</button>
+        </motion.li>
       </ul>
     </nav>
   );
