@@ -35,8 +35,30 @@ const Landing = () => {
   return (
     <>
       {isLoading ? (
-        <div>
-          <h1>Loading...</h1>
+        <div
+          style={{
+            padding: "20vw",
+          }}
+          className="wrapper center">
+          <motion.h1 className="center">Loading</motion.h1>
+          <motion.h1
+            initial={{ x: "100rem" }}
+            animate={{ x: 0 }}
+            transition={{ duration: 0.8 }}
+            className="center">.
+          </motion.h1>
+          <motion.h1
+            initial={{ x: "100rem" }}
+            animate={{ x: 0 }}
+            transition={{ duration: 1.2 }}
+            className="center">.
+          </motion.h1>
+          <motion.h1
+            initial={{ x: "100rem" }}
+            animate={{ x: 0 }}
+            transition={{ duration: 1.4 }}
+            className="center">.
+          </motion.h1>
         </div>
       ) : (
         <>
@@ -49,11 +71,11 @@ const Landing = () => {
                 transition={{ duration: 1 }}
                 className="left"
               >
-                <div className="heading">
-                  <h1>James Brown</h1>
-                </div>
                 <div className="text">
-                  <p>Developer && Designer</p>
+                  <p>Welcome,</p>
+                  <p>My Name Is</p>
+                  <p>James Brown</p>
+                  <p>I am a Designer & Developer!</p>
                 </div>
               </motion.div>
               <motion.div

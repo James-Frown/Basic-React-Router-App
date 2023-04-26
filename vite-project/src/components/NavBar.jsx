@@ -60,7 +60,7 @@ const Navbar = () => {
           </Link>
         </motion.li>
         <motion.li
-          initial={{ x: "50prem" }}
+          initial={{ x: "50rem" }}
           animate={{ x: 0 }}
           transition={{ duration: 0.8 }}
           style={{ marginLeft: "20px" }}
