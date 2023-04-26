@@ -86,6 +86,7 @@ starting to learn the animations for the react/vite app
 
 ## Framer Motion | Importing
     - import { motion } from "framer-motion"
+    - import { useAnimation } from "framer-motion"
 
 ## Framer Motion | Use
 When using the wrapper divs are motion component
@@ -102,6 +103,19 @@ When using the wrapper divs are motion component
     - transition has many props
         + add them like how you do the duration
 
+## UseEffect | About
+Use effect allows you to controll animations
+
+## UseEffect | Import
+    - import { useEffect } from "react"
+    - also add the framer motion useEffect to framer motion import
+
+## UseEffect | Use
+    - initialize it above the return statement of the react component
+        + const controls = useAnimation();
+    - set the animated div/image to have an animate prop
+    - have the value be the controls const
+    
 
     
 
