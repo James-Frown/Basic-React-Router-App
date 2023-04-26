@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Navbar from "./components/NavBar";
 import Landing from "./pages/Landing/Landing";
 import About from "./pages/About/About";
 import Skills from "./pages/Skills/Skills";
@@ -9,7 +8,6 @@ import Contact from "./pages/Contact/Contact";
 const App = () => {
   return (
     <BrowserRouter>
-      <Navbar />
       <Routes>
         <Route exact="true" path="/" element={<Landing />} />
         <Route path="/about" element={<About />} />
