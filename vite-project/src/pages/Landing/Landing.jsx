@@ -84,7 +84,7 @@ const Landing = () => {
                 transition={{ duration: 1 }}
                 className="right"
               >
-                <div className="center wrapper">
+                <div className="wrapper center">
                   <motion.img
                     animate={controls}
                     className="image"
