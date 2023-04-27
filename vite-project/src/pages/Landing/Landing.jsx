@@ -72,10 +72,31 @@ const Landing = () => {
                 className="left"
               >
                 <div className="text">
-                  <p>Welcome,</p>
-                  <p>My Name Is</p>
-                  <p>James Brown</p>
+                  <p
+                    style={{ fontSize: "30px" }}
+                  >Welcome,</p>
+                  <p>My Name Is <span>James Brown</span></p>
                   <p>I am a Designer & Developer!</p>
+                </div>
+                <div
+                  style={{ display: "flex", flexDirection: "row", gap: "2rem" }}
+                >
+                  <a
+                    href="mailto:2022privateequity@gmail.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{ textDecoration: "none", color: "black" }}
+                  >
+                    <button className="Dark">About Me</button>
+                  </a>
+                  <a
+                    href="mailto:2022privateequity@gmail.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{ textDecoration: "none", color: "black" }}
+                  >
+                    <button className="Dark">My Projects</button>
+                  </a>
                 </div>
               </motion.div>
               <motion.div

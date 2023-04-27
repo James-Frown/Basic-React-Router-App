@@ -11,8 +11,9 @@
 .hero {
  display: flex;
  flex-direction: row;
+ flex-wrap: wrap-reverse;
  justify-content: space-around;
- gap: 1rem;
+ gap: 10vw;
  align-items: center;
 } 
 
@@ -30,6 +31,7 @@
 
 .text {
     font-size: medium;
+    text-align: left;
 }
 
 .image {

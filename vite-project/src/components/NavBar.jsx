@@ -6,12 +6,13 @@ const Navbar = () => {
   return (
     <nav
       style={{
-        backgroundColor: "#CCC",
         height: "8vh",
+        width: "100%",
         padding: "10px",
         margin: 0,
         display: "flex",
         justifyContent: "center",
+        flexWrap: "wrap",
         alignItems: "center",
       }}
     >
@@ -29,7 +30,7 @@ const Navbar = () => {
           initial={{ x: "-100rem" }}
           animate={{ x: 0 }}
           transition={{ duration: 1 }}
-          style={{ marginLeft: "20px" }}
+          style={{ marginLeft: "20px", paddingRight: "30vw" }}
         >
           <Link exact to="/" style={{ textDecoration: "none", color: "black" }}>
             <img src="./myLogo.svg"></img>
