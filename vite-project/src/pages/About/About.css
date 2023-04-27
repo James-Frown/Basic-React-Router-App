@@ -9,7 +9,7 @@
     padding: 1rem;
 }
 
-.section1 {
+.content {
  display: flex;
  flex-direction: column-reverse;
  justify-content: center;
@@ -17,15 +17,9 @@
  align-items: center;
 } 
 
-.left {
+.media {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    align-items: flex-start;
-}
-
-.right {
-    display: flex;
     justify-content: center;
 }
 
@@ -36,4 +30,8 @@
 .image {
     display: block;
     object-fit: cover;
+}
+
+.section1text {
+    max-width: 40vw;
 }
