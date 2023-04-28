@@ -11,7 +11,9 @@ const Projects = () => {
           alignItems: "center",
         }}
       >
-        <h1>Projects</h1>
+        <h1>
+          Projects
+        </h1>
       </div>
     </>
   );

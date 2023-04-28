@@ -28,7 +28,10 @@ const Landing = () => {
     // start an animation with Framer Motion
     controls.start({
       y: [0, 20, 0],
-      transition: { duration: 5, repeat: Infinity },
+      transition: {
+        duration: 5,
+        repeat: Infinity
+      },
     });
   });
 
@@ -39,73 +42,148 @@ const Landing = () => {
           style={{
             padding: "20vw",
           }}
-          className="wrapper center">
-          <motion.h1 className="center">Loading</motion.h1>
+          className="wrapper center"
+        >
           <motion.h1
-            initial={{ x: "100rem" }}
-            animate={{ x: 0 }}
-            transition={{ duration: 0.8 }}
-            className="center">.
+            className="center"
+          >
+            Loading
           </motion.h1>
           <motion.h1
-            initial={{ x: "100rem" }}
-            animate={{ x: 0 }}
-            transition={{ duration: 1.2 }}
-            className="center">.
+            initial={{
+              x: "100rem"
+            }}
+            animate={{
+              x: 0
+            }}
+            transition={{
+              duration: 0.8
+            }}
+            className="center"
+          >
+            .
           </motion.h1>
           <motion.h1
-            initial={{ x: "100rem" }}
-            animate={{ x: 0 }}
-            transition={{ duration: 1.4 }}
-            className="center">.
+            initial={{
+              x: "100rem"
+            }}
+            animate={{
+              x: 0
+            }}
+            transition={{
+              duration: 1.2
+            }}
+            className="center"
+          >
+            .
+          </motion.h1>
+          <motion.h1
+            initial={{
+              x: "100rem"
+            }}
+            animate={{
+              x: 0
+            }}
+            transition={{
+              duration: 1.4
+            }}
+            className="center"
+          >
+            .
           </motion.h1>
         </div>
       ) : (
         <>
           <Navbar />
-          <div className="wrapper center">
-            <div className="hero">
+          <div
+            className="wrapper center"
+          >
+            <div
+              className="hero"
+            >
               <motion.div
-                initial={{ x: "-800px" }}
-                animate={{ x: 0 }}
-                transition={{ duration: 1 }}
+                initial={{
+                  x: "-800px"
+                }}
+                animate={{
+                  x: 0
+                }}
+                transition={{
+                  duration: 1
+                }}
                 className="left"
               >
-                <div className="text">
+                <div
+                  className="text"
+                >
                   <p
-                    style={{ fontSize: "30px" }}
-                  >Welcome,</p>
-                  <p>My Name Is <span>James Brown</span></p>
-                  <p>I am a Designer & Developer!</p>
+                    style={{
+                      fontSize: "30px"
+                    }}
+                  >
+                    Welcome,
+                  </p>
+                  <p>
+                    My Name Is <span>James Brown</span>
+                  </p>
+                  <p>
+                    I am a Designer & Developer!
+                  </p>
                 </div>
                 <div
-                  style={{ display: "flex", flexDirection: "row", gap: "2rem" }}
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    gap: "2rem"
+                  }}
                 >
                   <a
                     href="mailto:2022privateequity@gmail.com"
                     target="_blank"
                     rel="noreferrer"
-                    style={{ textDecoration: "none", color: "black" }}
+                    style={{
+                      textDecoration: "none",
+                      color: "black"
+                    }}
                   >
-                    <button className="Dark">About Me</button>
+                    <button
+                      className="Dark"
+                    >
+                      About Me
+                    </button>
                   </a>
                   <a
                     href="mailto:2022privateequity@gmail.com"
                     target="_blank"
                     rel="noreferrer"
-                    style={{ textDecoration: "none", color: "black" }}
+                    style={{
+                      textDecoration: "none",
+                      color: "black"
+                    }}
                   >
-                    <button className="Dark">My Projects</button>
+                    <button
+                      className="Dark"
+                    >
+                      My Projects
+                    </button>
                   </a>
                 </div>
               </motion.div>
               <motion.div
-                initial={{ x: "800px" }}
-                animate={{ x: 0 }}
-                transition={{ duration: 1 }}
+                initial={{
+                  x: "800px"
+                }}
+                animate={{
+                  x: 0
+                }}
+                transition={{
+                  duration: 1
+                }}
                 className="right"
               >
-                <div className="wrapper center">
+                <div
+                  className="wrapper center"
+                >
                   <motion.img
                     animate={controls}
                     className="image"

@@ -8,10 +8,23 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact="true" path="/" element={<Landing />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route
+          exact="true"
+          path="/"
+          element={<Landing />}
+        />
+        <Route
+          path="/about"
+          element={<About />}
+        />
+        <Route
+          path="/skills"
+          element={<Skills />}
+        />
+        <Route
+          path="/projects"
+          element={<Projects />}
+        />
       </Routes>
     </BrowserRouter>
   );
