@@ -73,7 +73,6 @@ const Landing = () => {
               transition={{
                 duration: 1.2
               }}
-              className="center"
             >
               .
             </motion.h1>
@@ -87,7 +86,6 @@ const Landing = () => {
               transition={{
                 duration: 1.4
               }}
-              className="center"
             >
               .
             </motion.h1>

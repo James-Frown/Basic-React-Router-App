@@ -1,4 +1,5 @@
 import { motion, useAnimation } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
     const controls = useAnimation();
@@ -10,6 +11,7 @@ const Hero = () => {
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
+                    padding: "2rem"
                 }}
             >
                 <div
@@ -34,14 +36,17 @@ const Hero = () => {
                         }}
                         style={{
                             display: "flex",
-                            flexDirection: "colum",
+                            flexDirection: "column",
                             justifyContent: "space-around",
                             alignItems: "flex-start",
                             gap: "1rem",
                         }}
                     >
                         <div
-                            className="text"
+                            style={{
+                                display: "flex",
+                                flexDirection: "column"
+                            }}
                         >
                             <p
                                 style={{
@@ -57,43 +62,51 @@ const Hero = () => {
                                 I am a Designer & Developer!
                             </p>
                         </div>
+
                         <div
                             style={{
                                 display: "flex",
                                 flexDirection: "row",
-                                gap: "2rem"
+                                flexWrap: "wrap",
+                                gap: "2rem",
                             }}
                         >
-                            <a
-                                href="mailto:2022privateequity@gmail.com"
-                                target="_blank"
-                                rel="noreferrer"
+                            <button
                                 style={{
-                                    textDecoration: "none",
-                                    color: "black"
+                                    padding: "6px",
+                                    background: "black",
+                                    borderRadius: "4px",
+                                    border: "solid black 1px"
                                 }}
                             >
-                                <button
-                                    className="Dark"
+                                <Link
+                                    to="/about"
+                                    style={{
+                                        textDecoration: "none",
+                                        color: "white",
+                                    }}
                                 >
-                                    About Me
-                                </button>
-                            </a>
-                            <a
-                                href="mailto:2022privateequity@gmail.com"
-                                target="_blank"
-                                rel="noreferrer"
+                                    Read More
+                                </Link>
+                            </button>
+                            <button
                                 style={{
-                                    textDecoration: "none",
-                                    color: "black"
+                                    padding: "6px",
+                                    background: "white",
+                                    borderRadius: "4px",
+                                    border: "solid black 1px"
                                 }}
                             >
-                                <button
-                                    className="Dark"
+                                <Link
+                                    to="/projects"
+                                    style={{
+                                        textDecoration: "none",
+                                        color: "black"
+                                    }}
                                 >
                                     My Projects
-                                </button>
-                            </a>
+                                </Link>
+                            </button>
                         </div>
                     </motion.div>
                     <motion.div

@@ -30,53 +30,60 @@ const About = () => {
   return (
     <>
       {isLoading ? (
-        <div
-          style={{
-            padding: "20vw",
-          }}
-          className="wrapper center">
-          <motion.h1
-            className="center"
+        <>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+              padding: "20vw",
+            }}
           >
-            Loading
-          </motion.h1>
-          <motion.h1
-            initial={{
-              x: "100rem"
-            }}
-            animate={{
-              x: 0
-            }}
-            transition={{
-              duration: 0.8
-            }}
-            className="center">.
-          </motion.h1>
-          <motion.h1
-            initial={{
-              x: "100rem"
-            }}
-            animate={{
-              x: 0
-            }}
-            transition={{
-              duration: 1.2
-            }}
-            className="center">.
-          </motion.h1>
-          <motion.h1
-            initial={{
-              x: "100rem"
-            }}
-            animate={{
-              x: 0
-            }}
-            transition={{
-              duration: 1.4
-            }}
-            className="center">.
-          </motion.h1>
-        </div>
+            <motion.h1
+            >
+              Loading
+            </motion.h1>
+            <motion.h1
+              initial={{
+                x: "100rem"
+              }}
+              animate={{
+                x: 0
+              }}
+              transition={{
+                duration: 0.8
+              }}
+            >
+              .
+            </motion.h1>
+            <motion.h1
+              initial={{
+                x: "100rem"
+              }}
+              animate={{
+                x: 0
+              }}
+              transition={{
+                duration: 1.2
+              }}
+            >
+              .
+            </motion.h1>
+            <motion.h1
+              initial={{
+                x: "100rem"
+              }}
+              animate={{
+                x: 0
+              }}
+              transition={{
+                duration: 1.4
+              }}
+            >
+              .
+            </motion.h1>
+          </div>
+        </>
       ) : (
         <>
           <Navbar />
