@@ -1,7 +1,5 @@
 import { motion, useAnimation } from "framer-motion";
 import { useEffect, useState } from "react";
-
-import "./Landing.css";
 import Navbar from "../../components/NavBar";
 
 const Landing = () => {
@@ -40,12 +38,13 @@ const Landing = () => {
       {isLoading ? (
         <div
           style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
             padding: "20vw",
           }}
-          className="wrapper center"
         >
           <motion.h1
-            className="center"
           >
             Loading
           </motion.h1>
@@ -59,7 +58,6 @@ const Landing = () => {
             transition={{
               duration: 0.8
             }}
-            className="center"
           >
             .
           </motion.h1>
@@ -96,10 +94,21 @@ const Landing = () => {
         <>
           <Navbar />
           <div
-            className="wrapper center"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
           >
             <div
-              className="hero"
+              style={{
+                display: "flex",
+                justifyContent: "space-around",
+                alignItems: "center",
+                flexDirection: "row",
+                flexWrap: "wrap-reverse",
+                gap: "10vw",
+              }}
             >
               <motion.div
                 initial={{
@@ -111,7 +120,13 @@ const Landing = () => {
                 transition={{
                   duration: 1
                 }}
-                className="left"
+                style={{
+                  display: "flex",
+                  flexDirection: "colum",
+                  justifyContent: "space-around",
+                  alignItems: "flex-start",
+                  gap: "1rem",
+                }}
               >
                 <div
                   className="text"
