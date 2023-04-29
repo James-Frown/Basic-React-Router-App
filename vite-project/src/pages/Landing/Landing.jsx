@@ -1,6 +1,7 @@
 import { motion, useAnimation } from "framer-motion";
 import { useEffect, useState } from "react";
 import Navbar from "../../components/NavBar";
+import Hero from "./Hero";
 
 const Landing = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -36,179 +37,66 @@ const Landing = () => {
   return (
     <>
       {isLoading ? (
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "center",
-            padding: "20vw",
-          }}
-        >
-          <motion.h1
-          >
-            Loading
-          </motion.h1>
-          <motion.h1
-            initial={{
-              x: "100rem"
-            }}
-            animate={{
-              x: 0
-            }}
-            transition={{
-              duration: 0.8
-            }}
-          >
-            .
-          </motion.h1>
-          <motion.h1
-            initial={{
-              x: "100rem"
-            }}
-            animate={{
-              x: 0
-            }}
-            transition={{
-              duration: 1.2
-            }}
-            className="center"
-          >
-            .
-          </motion.h1>
-          <motion.h1
-            initial={{
-              x: "100rem"
-            }}
-            animate={{
-              x: 0
-            }}
-            transition={{
-              duration: 1.4
-            }}
-            className="center"
-          >
-            .
-          </motion.h1>
-        </div>
-      ) : (
         <>
-          <Navbar />
           <div
             style={{
               display: "flex",
+              flexDirection: "row",
               justifyContent: "center",
-              alignItems: "center",
+              padding: "20vw",
             }}
           >
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "space-around",
-                alignItems: "center",
-                flexDirection: "row",
-                flexWrap: "wrap-reverse",
-                gap: "10vw",
+            <motion.h1
+            >
+              Loading
+            </motion.h1>
+            <motion.h1
+              initial={{
+                x: "100rem"
+              }}
+              animate={{
+                x: 0
+              }}
+              transition={{
+                duration: 0.8
               }}
             >
-              <motion.div
-                initial={{
-                  x: "-800px"
-                }}
-                animate={{
-                  x: 0
-                }}
-                transition={{
-                  duration: 1
-                }}
-                style={{
-                  display: "flex",
-                  flexDirection: "colum",
-                  justifyContent: "space-around",
-                  alignItems: "flex-start",
-                  gap: "1rem",
-                }}
-              >
-                <div
-                  className="text"
-                >
-                  <p
-                    style={{
-                      fontSize: "30px"
-                    }}
-                  >
-                    Welcome,
-                  </p>
-                  <p>
-                    My Name Is <span>James Brown</span>
-                  </p>
-                  <p>
-                    I am a Designer & Developer!
-                  </p>
-                </div>
-                <div
-                  style={{
-                    display: "flex",
-                    flexDirection: "row",
-                    gap: "2rem"
-                  }}
-                >
-                  <a
-                    href="mailto:2022privateequity@gmail.com"
-                    target="_blank"
-                    rel="noreferrer"
-                    style={{
-                      textDecoration: "none",
-                      color: "black"
-                    }}
-                  >
-                    <button
-                      className="Dark"
-                    >
-                      About Me
-                    </button>
-                  </a>
-                  <a
-                    href="mailto:2022privateequity@gmail.com"
-                    target="_blank"
-                    rel="noreferrer"
-                    style={{
-                      textDecoration: "none",
-                      color: "black"
-                    }}
-                  >
-                    <button
-                      className="Dark"
-                    >
-                      My Projects
-                    </button>
-                  </a>
-                </div>
-              </motion.div>
-              <motion.div
-                initial={{
-                  x: "800px"
-                }}
-                animate={{
-                  x: 0
-                }}
-                transition={{
-                  duration: 1
-                }}
-                className="right"
-              >
-                <div
-                  className="wrapper center"
-                >
-                  <motion.img
-                    animate={controls}
-                    className="image"
-                    src="https://i.ibb.co/dm3KxF1/dummy-img.png"
-                    alt="hero image"
-                  />
-                </div>
-              </motion.div>
-            </div>
+              .
+            </motion.h1>
+            <motion.h1
+              initial={{
+                x: "100rem"
+              }}
+              animate={{
+                x: 0
+              }}
+              transition={{
+                duration: 1.2
+              }}
+              className="center"
+            >
+              .
+            </motion.h1>
+            <motion.h1
+              initial={{
+                x: "100rem"
+              }}
+              animate={{
+                x: 0
+              }}
+              transition={{
+                duration: 1.4
+              }}
+              className="center"
+            >
+              .
+            </motion.h1>
           </div>
+        </>
+      ) : (
+        <>
+          <Navbar />
+          <Hero />
         </>
       )}
     </>
