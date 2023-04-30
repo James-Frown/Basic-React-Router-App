@@ -18,10 +18,20 @@ const Section1 = () => {
     return (
         <>
             <div
-                className="wrapper center"
+                style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center"
+                }}
             >
                 <div
-                    className="content"
+                    style={{
+                        display: "flex",
+                        flexDirection: "column-reverse",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        padding: "10vw"
+                    }}
                 >
                     <motion.div
                         initial={{
@@ -34,9 +44,11 @@ const Section1 = () => {
                             duration: 1
                         }}
                         style={{
-                            marginLeft: "20px"
+                            marginLeft: "20px",
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
                         }}
-                        className="center"
                     >
                         <a
                             href="mailto:2022privateequity@gmail.com"

@@ -1,9 +1,7 @@
 import { motion, useAnimation } from "framer-motion";
 import { useEffect, useState } from "react";
 
-import "./About.css";
 import Navbar from "../../components/NavBar";
-
 import Section1 from "./Section1";
 import Section2 from "./Section2";
 
