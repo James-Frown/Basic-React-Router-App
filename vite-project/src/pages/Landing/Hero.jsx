@@ -45,21 +45,44 @@ const Hero = () => {
                         <div
                             style={{
                                 display: "flex",
-                                flexDirection: "column"
+                                flexDirection: "column",
+                                gap: "1rem"
                             }}
                         >
                             <p
                                 style={{
-                                    fontSize: "30px"
+                                    fontSize: "2rem",
+                                    fontWeight: "bold",
+                                    margin: "0"
                                 }}
                             >
                                 Welcome,
                             </p>
-                            <p>
-                                My Name Is <span>James Brown</span>
+                            <p
+                                style={{
+                                    fontSize: "1rem",
+                                    margin: "0"
+                                }}
+                            >
+                                My Name Is <span
+                                    style={{
+                                        fontWeight: "bold",
+                                        margin: "0"
+                                    }}
+                                >James Brown</span>
                             </p>
-                            <p>
-                                I am a Designer & Developer!
+                            <p
+                                style={{
+                                    fontSize: "1rem",
+                                    margin: "0"
+                                }}
+                            >
+                                I am a <span
+                                    style={{
+                                        fontWeight: "bold",
+                                        margin: "0"
+                                    }}
+                                >Designer & Developer!</span>
                             </p>
                         </div>
 
