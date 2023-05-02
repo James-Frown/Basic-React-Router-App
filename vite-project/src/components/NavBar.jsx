@@ -5,54 +5,50 @@ import { motion } from "framer-motion";
 const Navbar = () => {
   return (
     <nav
+    id="Nav-Wrapper"
       style={{
-        height: "8vh",
-        width: "100%",
-        padding: "10px",
-        margin: 0,
         display: "flex",
-        justifyContent: "center",
-        flexWrap: "wrap",
+        flexDirection: "row",
+        justifyContent: "space-between",
         alignItems: "center",
+        flexWrap: "wrap"
       }}
     >
-      <ul
+      <motion.div
+      id="Nav-Logo"
+        initial={{
+          x: "-100rem"
+        }}
+        animate={{
+          x: 0
+        }}
+        transition={{
+          duration: 1
+        }}
         style={{
-          display: "flex",
-          flexDirection: "row",
-          alignItems: "center",
-          listStyle: "none",
-          padding: "0",
-          margin: 0,
+          padding: "1rem",
+          width: "330px",
+          textAlign: "center"
         }}
       >
-        <motion.li
-          initial={{
-            x: "-100rem"
-          }}
-          animate={{
-            x: 0
-          }}
-          transition={{
-            duration: 1
-          }}
+        <Link
+          exact
+          to="/"
           style={{
-            marginLeft: "20px",
-            paddingRight: "30vw"
-          }}
-        >
-          <Link
-            exact
-            to="/"
-            style={{
-              textDecoration: "none",
-              color: "black"
-            }}>
-            <img
-              src="./myLogo.svg"
-            />
-          </Link>
-        </motion.li>
+            textDecoration: "none",
+            color: "black"
+          }}>
+          <img
+            src="./myLogo.svg"
+          />
+        </Link>
+      </motion.div>
+      <ul
+      id="Nav-List"
+        style={{
+
+        }}
+      >
         <motion.li
           initial={{
             x: "50rem"
@@ -64,7 +60,7 @@ const Navbar = () => {
             duration: 0.6
           }}
           style={{
-            marginLeft: "20px"
+
           }}
         >
           <Link
@@ -89,7 +85,7 @@ const Navbar = () => {
             duration: 0.7
           }}
           style={{
-            marginLeft: "20px"
+
           }}
         >
           <Link
@@ -113,7 +109,7 @@ const Navbar = () => {
             duration: 0.8
           }}
           style={{
-            marginLeft: "20px"
+
           }}
         >
           <Link
@@ -137,24 +133,24 @@ const Navbar = () => {
             duration: 1
           }}
           style={{
-            marginLeft: "20px"
+
           }}
         >
-          <a
-            href="mailto:2022privateequity@gmail.com"
-            target="_blank"
-            rel="noreferrer"
-            style={{
-              textDecoration: "none",
-              color: "black"
-            }}
-          >
-            <button
-              className="Dark"
+          <button>
+            <a
+              href="mailto:2022privateequity@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                textDecoration: "none",
+                color: "black"
+              }}
             >
+
               Contact
-            </button>
-          </a>
+
+            </a>
+          </button>
         </motion.li>
       </ul>
     </nav>
