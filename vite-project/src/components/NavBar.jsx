@@ -5,17 +5,18 @@ import { motion } from "framer-motion";
 const Navbar = () => {
   return (
     <nav
-    id="Nav-Wrapper"
+      id="Nav-Wrapper"
       style={{
         display: "flex",
         flexDirection: "row",
-        justifyContent: "space-between",
+        justifyContent: "center",
         alignItems: "center",
-        flexWrap: "wrap"
+        flexWrap: "wrap",
+        gap: "10vw"
       }}
     >
       <motion.div
-      id="Nav-Logo"
+        id="Nav-Logo"
         initial={{
           x: "-100rem"
         }}
@@ -44,9 +45,14 @@ const Navbar = () => {
         </Link>
       </motion.div>
       <ul
-      id="Nav-List"
+        id="Nav-List"
         style={{
-
+          display: "flex",
+          flexDirection: "row",
+          flexWrap: "wrap",
+          textDecoration: "none",
+          padding: "1rem",
+          gap: "1rem"
         }}
       >
         <motion.li
@@ -60,7 +66,8 @@ const Navbar = () => {
             duration: 0.6
           }}
           style={{
-
+            textDecoration: "none",
+            
           }}
         >
           <Link
