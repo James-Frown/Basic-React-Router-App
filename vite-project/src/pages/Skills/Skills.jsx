@@ -2,6 +2,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useEffect, useState } from "react";
 
 import Navbar from "../../components/NavBar";
+import "./Special.scss";
 
 const Skills = () => {
   const [isLoading, setIsLoading] = useState(true);

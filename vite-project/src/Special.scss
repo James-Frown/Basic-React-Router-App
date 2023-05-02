@@ -1,0 +1,19 @@
+// Define the rainbow colors
+$colors: red, orange, yellow, green, blue, purple;
+
+// Define the rainbow text styles
+.rainbow-text {
+  background: linear-gradient(to right, $colors);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow-text 3s linear infinite;
+
+  @keyframes rainbow-text {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+}
