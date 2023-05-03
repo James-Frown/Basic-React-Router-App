@@ -57,6 +57,7 @@ const Navbar = () => {
           </Link>
         </motion.li>
         <motion.li
+          className="Nav-Item"
           initial={{
             x: "50rem"
           }}
@@ -66,21 +67,16 @@ const Navbar = () => {
           transition={{
             duration: 0.7
           }}
-          style={{
-
-          }}
         >
           <Link
+            className="Nav-Link"
             to="/skills"
-            style={{
-              textDecoration: "none",
-              color: "black"
-            }}
           >
             Skills
           </Link>
         </motion.li>
         <motion.li
+          className="Nav-Item"
           initial={{
             x: "50rem"
           }}
@@ -90,21 +86,16 @@ const Navbar = () => {
           transition={{
             duration: 0.8
           }}
-          style={{
-
-          }}
         >
           <Link
+            className="Nav-Link"
             to="/projects"
-            style={{
-              textDecoration: "none",
-              color: "black"
-            }}
           >
             Projects
           </Link>
         </motion.li>
         <motion.li
+          className="Nav-Item"
           initial={{
             x: "50rem"
           }}
@@ -114,23 +105,17 @@ const Navbar = () => {
           transition={{
             duration: 1
           }}
-          style={{
-
-          }}
         >
-          <button>
+          <button
+            className="Nav-Button"
+          >
             <a
+              className="Nav-Link"
               href="mailto:2022privateequity@gmail.com"
               target="_blank"
               rel="noreferrer"
-              style={{
-                textDecoration: "none",
-                color: "black"
-              }}
             >
-
               Contact
-
             </a>
           </button>
         </motion.li>

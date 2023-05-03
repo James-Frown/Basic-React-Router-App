@@ -1,15 +1,14 @@
 .Nav-Wrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 10vw;
+    gap: 1vh;
 }
 
 .Nav-Logo {
     padding: 1rem;
-    width: 400px;
+    width: auto;
     text-align: center;
 }
 
@@ -34,5 +33,48 @@
     font-size: large;
 }
 
+@media screen and (min-width: 640px) {
+    /* styles for screens with a width greater than or equal to 768px */
 
+    .Nav-Wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
+    }
 
+    .Nav-List {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-decoration: none;
+        list-style-type: none;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+    /* styles for screens with a width greater than or equal to 768px */
+
+    .Nav-Wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 25vw;
+    }
+
+    .Nav-List {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-decoration: none;
+        list-style-type: none;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+}
