@@ -24,10 +24,7 @@ const Navbar = () => {
         <Link
           exact
           to="/"
-          style={{
-            textDecoration: "none",
-            color: "black"
-          }}>
+        >
           <img
             src="./myLogo.svg"
           />
@@ -110,7 +107,7 @@ const Navbar = () => {
             className="Nav-Button"
           >
             <a
-              className="Nav-Link"
+              className="Nav-Button"
               href="mailto:2022privateequity@gmail.com"
               target="_blank"
               rel="noreferrer"

@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1vh;
+    gap: 0vh;
 }
 
 .Nav-Logo {
@@ -18,13 +18,14 @@
     flex-wrap: wrap;
     text-decoration: none;
     list-style-type: none;
+    align-items: center;
     padding: 1rem;
     gap: 1rem;
 }
 
 .Nav-Item {
     text-align: center;
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
 .Nav-Link {
@@ -33,8 +34,18 @@
     font-size: large;
 }
 
-@media screen and (min-width: 640px) {
-    /* styles for screens with a width greater than or equal to 768px */
+.Nav-Button {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    font-size: large;
+    border-radius: 6px;
+    border: solid black 1px;
+    padding: 0.2rem;
+}
+
+@media screen and (min-width: 700px) {
+    /* styles for screens with a width greater than or equal to 700px */
 
     .Nav-Wrapper {
         display: flex;
@@ -57,7 +68,7 @@
 }
 
 @media screen and (min-width: 900px) {
-    /* styles for screens with a width greater than or equal to 768px */
+    /* styles for screens with a width greater than or equal to 900px */
 
     .Nav-Wrapper {
         display: flex;
