@@ -2,21 +2,15 @@ import { Link } from "react-router-dom";
 
 import { motion } from "framer-motion";
 
+import './NavBar.css';
+
 const Navbar = () => {
   return (
     <nav
-      id="Nav-Wrapper"
-      style={{
-        display: "flex",
-        flexDirection: "row",
-        justifyContent: "center",
-        alignItems: "center",
-        flexWrap: "wrap",
-        gap: "10vw"
-      }}
+      className="Nav-Wrapper"
     >
       <motion.div
-        id="Nav-Logo"
+        className="Nav-Logo"
         initial={{
           x: "-100rem"
         }}
@@ -25,11 +19,6 @@ const Navbar = () => {
         }}
         transition={{
           duration: 1
-        }}
-        style={{
-          padding: "1rem",
-          width: "330px",
-          textAlign: "center"
         }}
       >
         <Link
@@ -45,17 +34,10 @@ const Navbar = () => {
         </Link>
       </motion.div>
       <ul
-        id="Nav-List"
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          flexWrap: "wrap",
-          textDecoration: "none",
-          padding: "1rem",
-          gap: "1rem"
-        }}
+        className="Nav-List"
       >
         <motion.li
+          className="Nav-Item"
           initial={{
             x: "50rem"
           }}
@@ -65,18 +47,11 @@ const Navbar = () => {
           transition={{
             duration: 0.6
           }}
-          style={{
-            textDecoration: "none",
-            
-          }}
         >
           <Link
+            className="Nav-Link"
             exact
             to="/about"
-            style={{
-              textDecoration: "none",
-              color: "black"
-            }}
           >
             About
           </Link>
